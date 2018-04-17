@@ -18,7 +18,7 @@ spring:
       server:
         git:
           #这是其他项目配置文件的git仓库地址
-          uri: https://github.com/sheetanchor/Micro-demo/springcloud-config-profile
+          uri: https://github.com/sheetanchor/Micro-demo/tree/master/springcloud-config-profile
           searchPaths: '{application}'
 security:
   basic:
