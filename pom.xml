@@ -10,6 +10,7 @@
     <modules>
         <module>springcloud-eureka-server</module>
         <module>springcloud-config-server</module>
+        <module>springcloud-provider-server</module>
     </modules>
 
 

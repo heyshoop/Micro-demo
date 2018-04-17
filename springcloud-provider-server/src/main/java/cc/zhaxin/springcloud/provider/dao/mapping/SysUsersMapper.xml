@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.zhaxin.springcloud.provider.dao.SysUsersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cc.zhaxin.springcloud.provider.model.SysUsers">
+        <id column="USER_ID" property="userId" />
+        <result column="USER_NAME" property="userName" />
+        <result column="PASSWORD" property="password" />
+        <result column="ACCOUNT_STATUS" property="accountStatus" />
+        <result column="SECURITY_LEVEL" property="securityLevel" />
+        <result column="MAX_SESSIONS" property="maxSessions" />
+        <result column="IS_SYS" property="isSys" />
+        <result column="IS_CPUBLIC" property="isCpublic" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="LOCK_TIME" property="lockTime" />
+        <result column="EXPIRED_TIME" property="expiredTime" />
+        <result column="PSWD_UPT_TIME" property="pswdUptTime" />
+        <result column="PSWD_TIME" property="pswdTime" />
+        <result column="CORPORATION_ID" property="corporationId" />
+        <result column="DEPARTMENT_ID" property="departmentId" />
+        <result column="EMPLOYEE_ID" property="employeeId" />
+        <result column="E_MAIL" property="eMail" />
+        <result column="QQ" property="qq" />
+        <result column="MOBILE" property="mobile" />
+        <result column="WECHAT" property="weChat" />
+        <result column="TELEPHONE" property="telephone" />
+        <result column="CHAR_1" property="char1" />
+        <result column="CHAR_2" property="char2" />
+        <result column="NUM_1" property="num1" />
+        <result column="NUM_2" property="num2" />
+        <result column="PERMISSION_STRU_ID" property="permissionStruId" />
+        <result column="USER_ORDER" property="userOrder" />
+        <result column="PROVINCE_CODE" property="provinceCode" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        u.USER_ID AS userId, u.USER_NAME AS userName, u.PASSWORD AS password, u.ACCOUNT_STATUS AS accountStatus, u.SECURITY_LEVEL AS securityLevel, u.MAX_SESSIONS AS maxSessions, u.IS_SYS AS isSys, u.IS_CPUBLIC AS isCpublic, u.CREATE_TIME AS createTime, u.LOCK_TIME AS lockTime, u.EXPIRED_TIME AS expiredTime, u.PSWD_UPT_TIME AS pswdUptTime, u.PSWD_TIME AS pswdTime, u.CORPORATION_ID AS corporationId, u.DEPARTMENT_ID AS departmentId, u.EMPLOYEE_ID AS employeeId, u.E_MAIL AS eMail, u.QQ AS qq, u.MOBILE AS mobile, u.WECHAT AS weChat, u.TELEPHONE AS telephone, u.CHAR_1 AS char1, u.CHAR_2 AS char2, u.NUM_1 AS num1, u.NUM_2 AS num2, u.PERMISSION_STRU_ID AS permissionStruId, u.USER_ORDER AS userOrder, u.PROVINCE_CODE AS provinceCode
+    </sql>
+    
+    <!-- 获取用户列表 -->
+    <select id="getUserList" resultType="java.util.Map">
+        SELECT 
+            <include refid="Base_Column_List"></include>
+        FROM SYS_USERS u
+        WHERE 1=1
+        <!--<if test="userId !=null and userId!='' ">-->
+            <!--AND USER_ID like CONCAT('%',#{userId},'%')-->
+        <!--</if>-->
+        <!--<if test="userName !=null and userName!='' ">-->
+            <!--AND USER_NAME like CONCAT('%',#{userName},'%')-->
+        <!--</if>-->
+    </select>
+</mapper>
