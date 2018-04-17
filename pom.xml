@@ -11,6 +11,7 @@
         <module>springcloud-eureka-server</module>
         <module>springcloud-config-server</module>
         <module>springcloud-provider-server</module>
+        <module>springcloud-consumer-ribbon-config-swagger</module>
     </modules>
 
 
