@@ -23,7 +23,7 @@ spring:
       fail-fast: true
       username: config
       password: config
-      profile: dev
+      profile: test
   datasource:
       url: jdbc:mysql://192.168.2.83:3306/hussar?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
       username: hussar

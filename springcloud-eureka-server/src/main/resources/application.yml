@@ -2,7 +2,7 @@ server:
   port: 8761
 eureka:
   datacenter: trmap
-  environment: product
+  environment: test
   client:
     healthcheck:
       enabled: true
