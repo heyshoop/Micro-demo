@@ -9,8 +9,8 @@ spring:
     active: test
 zuul:
   routes:
-    springcloud-consumer-config: /consumer/**
-    springcloud-provider-config: /provider/**
+    springcloud-consumer-server: /consumer/**
+    springcloud-provider-server: /provider/**
 
 # keycloak:
 #   realm : springcloud-zuul
