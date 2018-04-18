@@ -10,6 +10,7 @@ spring:
         db-name: hussar
         filters: log4j,wall,mergeStat
         driverClassName: com.mysql.jdbc.Driver
+        type: com.alibaba.druid.pool.DruidDataSource
   redis:
           host: 192.168.2.83
           port: 6379
