@@ -1,5 +1,5 @@
 server:
-  port: 8800
+  port: 8888
 eureka:
   client:
     service-url:
@@ -18,8 +18,11 @@ spring:
       server:
         git:
           #这是其他项目配置文件的git仓库地址
-          uri: https://github.com/sheetanchor/Micro-demo/tree/master/springcloud-config-profile
-          searchPaths: '{application}'
+          uri: https://github.com/sheetanchor/Micro-demo.git
+          searchPaths: 'springcloud-config-profile/{application}'
+          default-label: master
+          #username:
+          #password:
 security:
   basic:
     enabled: true
