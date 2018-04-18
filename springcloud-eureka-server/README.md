@@ -3,3 +3,6 @@ Eureka
 
 
 eureka-server作为服务发现的核心，第一个搭建，后面的服务都要注册到eureka-server上，意思是告诉eureka-server自己的服务地址是啥。当然还可以用zookeeper或者springconsul。
+
+验证地址：
+http://localhost:8761/
