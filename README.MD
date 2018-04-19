@@ -14,4 +14,4 @@
 •springcloud-consumer-feign-config-swagger基于feign的消费者 
 •springcloud-zuul路由注册与负载均衡   
 •springcloud-hystrix-tribine-dashboard集群监控   
-•    
+•springcloud-zipkin-server 链路追踪服务    

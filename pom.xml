@@ -15,6 +15,7 @@
         <module>springcloud-consumer-feign-config-swagger</module>
         <module>springcloud-zuul</module>
         <module>springcloud-hystrix-tribine-dashboard</module>
+        <module>springcloud-zipkin-server</module>
     </modules>
 
 
