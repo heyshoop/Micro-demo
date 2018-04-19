@@ -12,6 +12,7 @@
         <module>springcloud-config-server</module>
         <module>springcloud-provider-server</module>
         <module>springcloud-consumer-ribbon-config-swagger</module>
+        <module>springcloud-consumer-feign-config-swagger</module>
         <module>springcloud-zuul</module>
         <module>springcloud-hystrix-tribine-dashboard</module>
     </modules>
