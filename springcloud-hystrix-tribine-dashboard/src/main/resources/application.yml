@@ -13,7 +13,7 @@ eureka:
 turbine:
   aggregator:
     clusterConfig: default
-  appConfig: springcloud-consumer-server #如果有多个可以通过','依次添加
+  appConfig: springcloud-consumer-server,springcloud-consumer-feign #如果有多个可以通过','依次添加
   clusterNameExpression: "'default'"
 spring:
   application:
