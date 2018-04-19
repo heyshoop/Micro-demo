@@ -10,6 +10,7 @@ spring:
 zuul:
   routes:
     springcloud-consumer-server: /consumer/**
+    springcloud-consumer-feign: /consumerfeign/**
     springcloud-provider-server: /provider/**
 
 # keycloak:
