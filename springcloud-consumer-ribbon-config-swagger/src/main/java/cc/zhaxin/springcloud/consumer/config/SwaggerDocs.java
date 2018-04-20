@@ -35,9 +35,9 @@ public class SwaggerDocs {
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
                 .title("springcloud 使用手册")
-                .contact(new Contact("jger","http://sanqi.iask.in","jger.zq@qq.com"))
-                .description("springcloud-yasaka")
-                .termsOfServiceUrl("http://sanqi.iask.in")
+                .contact(new Contact("Anchor","http://www.zhaxin.cc","netuser.orz@icloud.com"))
+                .description("springcloud-demo")
+                .termsOfServiceUrl("http://www.zhaxin.cc")
                 .version("1.0")
                 .build();
     }
