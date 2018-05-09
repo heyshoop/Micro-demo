@@ -11,7 +11,7 @@
 •springcloud-config-server远程配置中心config-server   
 •springcloud-provider-server服务提供者，demo内置两个接口   
 •springcloud-consumer-ribbon-config-swagger基于ribbon的消费者   
-•springcloud-consumer-feign-config-swagger基于feign的消费者 
+•springcloud-consumer-feign-config-swagger基于feign的消费者   
 •springcloud-zuul路由注册与负载均衡   
 •springcloud-hystrix-tribine-dashboard集群监控   
 •springcloud-zipkin-server 链路追踪服务    
